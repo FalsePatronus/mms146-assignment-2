@@ -9,8 +9,8 @@ class Money:
   def spend(self, a):
     self.amount = a
 
-  def save(self, a):
-    self.amount = a
+  def changeForm(self, f):
+    self.form = f
 
   def give(self, o):
     self.owner = o
@@ -37,3 +37,21 @@ money1.convert("Philippine Peso/s")
 print ("I converted my money to " + money1.currency)
 money1.number("54 000 000")
 print ("I have " + money1.amount + " " + money1.currency)
+
+#Let's convert it from Cash to Check
+money1.changeForm("Check")
+print ("I have " + money1.amount + " " + money1.currency + " in the form of " + money1.form )
+
+#Let's give this money to  You!
+money1.give("You")
+print ("I have " + money1.amount + " " + money1.currency + " in the form of " + money1.form + " for " + money1.owner)
+
+#But you have to find the money somewhere
+money1.transfer("somewhere")
+print (("I have " + money1.amount + " " + money1.currency + \
+        " in the form of " + money1.form + " for " + money1.owner + " hidden " + money1.location))
+
+#let's spend it!
+money1.spend("You spent the money!")
+print (money1.amount)
+
