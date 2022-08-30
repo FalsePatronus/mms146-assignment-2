@@ -30,7 +30,7 @@ class Cabinet:
         self.__size = s
         
     def get_size(self):
-        print (self.__size)
+        print ("cabinet is", self.__size)
         
     def set_material(self, m): 
         self.__material = m
@@ -58,7 +58,7 @@ centertable1 = CenterTable("1 meter tall, ", "Oak White", " Four handles, ", "ma
   
   #This is for calling all the attributes of the Cabinet.
 print ("The changeable attributes of our cabinet is " + cabinet1.color + "," + cabinet1.handleType + "all of " + cabinet1.shelves)
-cabinet1.get_size() ## NO IDEA HOW TO PUT THIS INTO A STRING
+cabinet1.get_size() 
 
 
 
