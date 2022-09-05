@@ -1,0 +1,206 @@
+@import url(https://fonts.googleapis.com/css?family=Bitter|Source+Code+Pro|Noto+Sans);
+
+.body {
+    background-color: rgb(243, 243, 243);
+    font-family: 'Noto Sans';
+    margin: 0;
+    box-sizing: border-box;
+}
+
+a {
+    color:#fff;
+    text-decoration: none;
+}
+
+/* navigation bar */
+.home{
+    position: relative;
+    display:flex;
+    align-items: center;
+    padding: 10px;
+    background-color: #000000;
+    color: #fff;
+}
+
+.homeh2{
+   font-family: 'Source Code Pro', ExtraBold;
+   align-items: center;
+   font-size: 36px;
+}
+
+.current {
+    align-items: center;
+    font-family: 'Source Code Pro', ExtraBold;
+    font-size: 30px;
+    margin: 10px;
+    background: none;
+}
+
+.navLink {
+    align-items: center;
+    font-family: 'Source Code Pro', Light;
+    width:auto;
+    height:auto;
+    color: #fff;
+    background: #000;
+    padding: 10px;
+    font-size: 18px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.navLink:hover {
+    align-items: center;
+    width:auto;
+    height:auto;
+    font-family: 'Source Code Pro', Light;
+    color: #000000;
+    background: #fff;
+    font-size: 18px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+/* style for columns seperating profiles */
+.cleft{
+    top:0px;
+    left:0px;
+    height:600px;
+    width:720px;
+    background: #3e3e3e;
+    color:#fff;
+}
+
+.cright{
+    top:0px;
+    left:0px;
+    height:600px;
+    width:720px;
+    background: #fff;
+    color: #3e3e3e;
+}
+
+.column{
+    float: left;
+    width: 50%;
+    align-items: center;
+    text-align: center;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+  @media screen and (max-width: 600px) {
+    .column {
+      width: 100%;
+    }
+}
+
+/* button styles */
+.buttonHome {
+    border-radius: 10px;
+    height:65px;
+    width: 154px;
+    font-family: 'Source Code Pro', Medium;
+    font-size: 24px;
+    margin: 30px;
+}
+
+.bLeft {
+    background: #fff;
+    color: #3e3e3e;
+}
+
+.bRight{
+    background: #3e3e3e;
+    color: #fff;
+}
+
+.bLeft:hover {
+    background: #fff;
+    color: #3e3e3e;
+    border:2px #000000;
+    box-shadow:-5px 5px #000;
+}
+
+.bRight:hover{
+    background: #3e3e3e;
+    color: #fff;
+    box-shadow:-5px 5px #000000;
+    border:2px #3e3e3e;
+}
+
+.profileContainer{
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    border: 5px #252525;
+}
+
+.content {
+    margin-left: 190px;
+    border-left: 1px solid #d4d4d4;
+    padding: 1em;
+    overflow: hidden;
+  }
+  
+  /* specific to Nicko's pages*/
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+  }
+  
+  li a {
+    display: block;
+    color: #000;
+    padding: 8px 16px;
+    text-decoration: none;
+  }
+  
+  li a.active {
+    background-color: #84e4e2;
+    color: white;
+  }
+  
+  li a:hover:not(.active) {
+    background-color: #29292a;
+    color: white;
+  }
+  
+  table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+    margin: 30px 0;
+  }
+  
+  td,
+  th {
+    border: 1px solid #dddddd;
+    padding: 8px;
+  }
+  
+  tr:nth-child(1) {
+    background-color: #84e4e2;
+    color: white;
+  }
+  
+  tr td i.fas {
+    display: block;
+    font-size: 35px;
+    text-align: center;
+  }
+  
+  .footer {
+    padding: 55px 20px;
+    background-color: #2e3550;
+    color: white;
+    text-align: center;
+  }
